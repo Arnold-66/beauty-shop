@@ -91,6 +91,8 @@ body {
 
 a {
     text-decoration: none;
+    color: rgb(95, 95, 95);
+    
 
 }
 a:hover {
@@ -107,7 +109,7 @@ a:hover {
 }
 
 .nav-item:nth-child(1) {
-    padding-left: 50em;
+    padding-left: 40em;
 }
 
 
