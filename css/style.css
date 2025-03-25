@@ -2,6 +2,8 @@ body {
     margin: auto;
     padding: 0;
     background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .hero-wrap {
@@ -103,7 +105,7 @@ a:hover {
 }
 
 .nav-item:nth-child(1) {
-    padding-left: 25em;
+    padding-left: 50em;
 }
 
 
