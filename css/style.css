@@ -42,52 +42,465 @@ body {
 
 }
 
-.navbar-nav {
-    list-style: none;
-    
-   display: inline-flex;
-   
-}
-
-.navbar-brand {
-    font-size: 35px;
-    
-}
-.navbar {
-    background-color: ghostwhite;
-    border: 1px solid ghostwhite ;
-    width: 100%;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Adds shadow for a pop-out effect */
-    position: fixed;
-    z-index: 1111;
-    padding-top: 10px;
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-}
-
-.navbar-collapse {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
 
 .menu {
     display: none;
 }
 
-@media  (max-width: 1000px) {
-    
-    .menu {
-        font-size: 20em;
-    }
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row1, .row2, .row3, .row4 {
+    width: 90%;
+    margin-left: 0;
+    padding: 2em 1em;
+  }
+
+  .beauty {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .b-content {
+    width: 90%;
+    text-align: center;
+  }
+
+  .beauty-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+  }
+
+  .flaticon1 {
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  .position {
+    display: block;
+    margin-top: 0.5em;
+  }
+
+  .discount1 {
+    margin: 2em auto;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .hs {
+    font-size: 1.5em !important;
+  }
+
+  .dp {
+    font-size: 0.9em;
+    padding: 0 1em;
+  }
+
+  .bookb {
+    float: none !important;
+    display: inline-block;
+    margin-top: 1em;
+  }
+
+ 
 }
+
+
+/* new styles*/
+
+/* Basic styling */
+.navbar {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fc4dd6;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Links */
+  .nav-links {
+    display: flex;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #fc4dd6;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: #fff;
+      width: 100%;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      gap: 1rem;
+      margin-left: 3em;
+    }
+  }
+  
+
+/* General styling */
+.pdiv {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .pdiv2 {
+    flex: 1;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .orderbutton a {
+    display: inline-block;
+    background: #fc4dd6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .orderbutton a:hover {
+    background: #f515c4;
+  }
+  
+  /* Pricing section layout */
+  .row.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Contact and Appointment */
+  .contact-section {
+    background-color: rgb(252, 77, 214);
+    padding: 2em 1em;
+
+  }
+  
+  .contact-card {
+    background-color: rgb(245, 21, 196);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+  
+  .contact-card h3 {
+    color: white;
+  }
+  
+  .contact-card p,
+  .contact-card span {
+    color: #fefefe;
+  }
+  
+  .appointment-form {
+    background: transparent;
+    border-radius: 8px;
+    padding: 1em;
+    max-width: 100%;
+  }
+  
+  .appointment-form input,
+  .appointment-form textarea {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    background: transparent;
+    margin-bottom: 1em;
+    font-size: 14px;
+    outline: none;
+  }
+  .appointment-form textarea {
+    width: 95%;
+  }
+  
+  /* Responsive design */
+  @media (min-width: 768px) {
+    .appointment-layout {
+      display: flex;
+      justify-content: space-between;
+      gap: 2em;
+    }
+  
+    .appointment-form input,
+    .appointment-form textarea {
+      font-size: 16px;
+    }
+  
+    .form-split {
+      display: flex;
+      gap: 10px;
+    }
+  
+    .form-split > div {
+      flex: 1;
+    }
+  }
+
+
+  .work-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+  
+  .work-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  /* At medium screen and up, switch to 2 columns */
+  @media (min-width: 768px) {
+    .work-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Optional: Add 3 columns on larger screens if needed */
+  @media (min-width: 992px) {
+    .work-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  
+  /* Each card style (optional enhancements) */
+  .pricing-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5em;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 5em;
+  }
+  
+  /* Pricing inner content (if needed) */
+  .pdiv2 {
+    text-align: center;
+  }
+  
+  /* Responsive columns */
+  @media (min-width: 768px) {
+    .pricing-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .pricing-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+
+  .beauty-experts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1.5em;
+  margin-bottom: 5em;
+}
+
+.expert-card {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.expert-card img.beauty-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.expert-card h3 {
+  font-size: 1rem;
+  margin: 0.5em 0 0.3em;
+}
+
+.expert-card .position {
+  font-size: 0.85rem;
+  color: #999;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.expert-card .bio {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .expert-card {
+    width: 90%;
+  }
+}
+
+/* General section styles */
+.services-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  /* Container for services */
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Card for each service */
+  .service-card {
+    background: none;
+    padding: 2rem 1.5rem;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Icon styles */
+  .icon-wrapper {
+    background-color: #fc4dd6;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-wrapper img.flaticon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  /* Text styles */
+  .service-card .heading {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: 90%;
+    }
+  }
+  
+  /*end*/
 
 a {
     text-decoration: none;
@@ -97,19 +510,6 @@ a {
 }
 a:hover {
     color: lightcoral;
-}
-.nav-item {
-    padding-right: 3em;
-    font-size: 15px;
-    
-}
-
-.nav-item:enabled {
-    color: pink;
-}
-
-.nav-item:nth-child(1) {
-    padding-left: 40em;
 }
 
 
