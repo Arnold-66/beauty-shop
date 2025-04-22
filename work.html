@@ -29,24 +29,13 @@
   </head>
   <body>
 	<nav class="navbar" id="ftco-navbar">
-		<div class="container1">
-		  <a class="navbar-brand" href="index.html">PRETTY</a> 
-		  <button class="menu" type="button" id="menu">
-	        Menu
-			
-	      </button>
-		  <div class="collapse navbar-collapse" id="collapse">
-			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item active"><a href="index.html" class="nav-link">HOME</a></li>
-			  <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
-			  <li class="nav-item"><a href="services.html" class="nav-link">SERVICES</a></li>
-			  <li class="nav-item"><a href="work.html" class="nav-link">WORK</a></li>
-			  <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
-			</ul>
-		  </div>
-	
-		  <div class="collapse" id="ftco-nav">
-			<ul class="navbar-nav ml-auto">
+		<div class="nav-container">
+		  <a class="navbar-brand" href="index.html">PRETTY</a>
+		  <button class="menu-toggle" id="menu-toggle">
+			☰
+		  </button>
+		  <div class="nav-links" id="nav-links">
+			<ul class="navbar-nav">
 			  <li class="nav-item active"><a href="index.html" class="nav-link">HOME</a></li>
 			  <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
 			  <li class="nav-item"><a href="services.html" class="nav-link">SERVICES</a></li>
@@ -55,7 +44,7 @@
 			</ul>
 		  </div>
 		</div>
-	  </nav>
+	  </nav>	  
 	<!-- END nav -->
 	
     
@@ -77,175 +66,113 @@
 	</section>
 
 	
+	<section style="margin-bottom: 6em;">
+		<div class="container">
+		  <div style="margin-top: 4em; margin-bottom: 4em;">
+			<h2 class="mb-4">Our Work</h2>
+			<p class="container1 flaticon1">
+			  Far far away, behind the word mountains, far from the <br>
+			  countries Vokalia and Consonantia, there live the blind texts.
+			</p>
+		  </div>
+		</div>
+	  
+		<div class="work-grid container1">
+		  <div class="work-item">
+			<img src="images/work-1.jpg" class="imgw" alt="Work 1">
+		  </div>
+		  <div class="work-item">
+			<img src="images/work-2.jpg" class="imgw" alt="Work 2">
+		  </div>
+		  <div class="work-item">
+			<img src="images/work-3.jpg" class="imgw" alt="Work 3">
+		  </div>
+		  <div class="work-item">
+			<img src="images/work-4.jpg" class="imgw" alt="Work 4">
+		  </div>
+		  <div class="work-item">
+			<img src="images/work-5.jpg" class="imgw" alt="Work 5">
+		  </div>
+		  <div class="work-item">
+			<img src="images/work-6.jpg" class="imgw" alt="Work 6">
+		  </div>
+		  <div class="work-item">
+			<img src="images/work-7.jpg" class="imgw" alt="Work 7">
+		  </div>
+		  <div class="work-item">
+			<img src="images/work-8.jpg" class="imgw" alt="Work 8">
+		  </div>
+		  <div class="work-item">
+			<img src="images/work-9.jpg" class="imgw" alt="Work 9">
+		  </div>
+		</div>
+	  </section>
+	  
 
-    <section style="margin-bottom: 6em;">
-    	<div class="container">
-			<div style="margin-top: 4em; margin-bottom: 4em;" >            
-				<h2 class="mb-4">Our Work</h2>
-				<p class="container1 flaticon1">Far far away, behind the word mountains, far from the <br>countries Vokalia and Consonantia, there live the blind texts.</p>
-          	</div>
-        </div>
-        <div class="row container1" style="margin-bottom: 2em;">
-        	<div>
-				<img src="images/work-1.jpg" class="imgw" alt="Colorlib Template">
-				<div>
-					<div>
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
+
+
+	<section style="background-color: rgb(252, 77, 214); padding: 4em 0;">
+		<div style="
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  align-items: flex-start;
+		  gap: 2em;
+		  max-width: 1200px;
+		  margin: 0 auto;
+		  padding: 1em;
+		">
+		  <!-- Address Card -->
+		  <div style="
+			flex: 1 1 300px;
+			min-width: 280px;
+			background-color: rgb(245, 21, 196);
+			color: rgb(22, 22, 22);
+			padding: 2em;
+			border-radius: 10px;
+			box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+		  ">
+			<h3 style="text-align: center;">Address</h3>
+			<p>Kyambogo University<br>School of Computing and Information Science</p>
+	  
+			<h3 style="text-align: center;">Phone</h3>
+			<p><strong>000 123 456</strong> or <strong>000 987 654</strong></p>
+	  
+			<h3 style="text-align: center;">Opening Hours</h3>
+			<p><strong>Monday - Friday</strong><br>08:00am - 09:00pm</p>
+		  </div>
+	  
+		  <!-- Appointment Form -->
+		  <div style="
+			flex: 1 1 300px;
+			min-width: 280px;
+			background-color: transparent;
+			padding: 2em;
+		  ">
+			<h2 style="text-align: center;">Appointment</h2>
+			<form>
+			  <div style="display: flex; flex-wrap: wrap; gap: 1em;">
+				<div style="flex: 1 1 45%;">
+				  <label>First Name</label><br>
+				  <input type="text" name="firstname" required style="width: 100%; border: none; border-bottom: 1px solid #ccc; background: transparent; margin-bottom: 1em;">
+				  <label>Last Name</label><br>
+				  <input type="text" name="lastname" required style="width: 100%; border: none; border-bottom: 1px solid #ccc; background: transparent;">
 				</div>
-        	</div>
-        	<div class="col-md-4 ftco-animate">
-				<img src="images/work-2.jpg" class="imgw" alt="Colorlib Template">
-				<div class="info d-flex align-items-center">
-					<div>
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
+				<div style="flex: 1 1 45%;">
+				  <label>Tel</label><br>
+				  <input type="text" name="tel" required style="width: 100%; border: none; border-bottom: 1px solid #ccc; background: transparent; margin-bottom: 1em;">
+				  <label>Date</label><br>
+				  <input type="date" name="date" required style="width: 100%; border: none; border-bottom: 1px solid #ccc; background: transparent;">
 				</div>
-        	</div>
-        	<div class="col-md-4 ftco-animate">
-				<img src="images/work-3.jpg" class="imgw" alt="Colorlib Template">
-				<div class="info d-flex align-items-center">
-					<div>
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
-				</div>
-        	</div>
-        </div>
-
-		<div class="row container1" >
-        	<div>
-				<img src="images/work-4.jpg" class="imgw" alt="Colorlib Template">
-				<div>
-					<div>
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
-				</div>
-        	</div>
-        	<div class="col-md-4 ftco-animate">
-				<img src="images/work-5.jpg" class="imgw" alt="Colorlib Template">
-				<div class="info d-flex align-items-center">
-					<div>
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
-				</div>
-        	</div>
-        	<div class="col-md-4 ftco-animate">
-				<img src="images/work-6.jpg" class="imgw" alt="Colorlib Template">
-				<div class="info d-flex align-items-center">
-					<div>
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
-				</div>
-        	</div>
-        </div>
-
-		<div class="row container1" style="margin-top: 2em;">
-        	<div>
-				<img src="images/work-7.jpg" class="imgw" alt="Colorlib Template">
-				<div>
-					<div>
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
-				</div>
-        	</div>
-        	<div class="col-md-4 ftco-animate">
-				<img src="images/work-8.jpg" class="imgw" alt="Colorlib Template">
-				<div class="info d-flex align-items-center">
-					<div>
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
-				</div>
-        	</div>
-        	<div class="col-md-4 ftco-animate">
-				<img src="images/work-9.jpg" class="imgw" alt="Colorlib Template">
-				<div class="info d-flex align-items-center">
-					<div>
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-search"></span>
-						</div>
-					</div>
-				</div>
-        	</div>
-        </div>
-    </section>
-
-
-
-
-	
-		
-		<section style="background-color: rgb(252, 77, 214); height: 500px;" >
-    		<div class="container1 flaticon1">
-
-				<div style=" margin-top:5em; padding: 1em; height: 300px;  border-radius: 8px; background-color: rgb(245, 21, 196);     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Adds shadow for a pop-out effect */
-;" >
-					<div class="margin">
-						<h3 class="container1 flaticon1" >Address</h3>
-						<p>Kyambogo University<br>School of Computing and Information Science</p>
-					</div>
-					<div class="margin">
-						<h3 class="container1 flaticon1" >Phone</h3>
-						<p><strong>000 123 456</strong> or <strong>000 987 654</strong></p>
-					</div>
-					<div class="margin">
-						<h3 class="container1 flaticon1">Opening Hours</h3>
-						<p><strong>Monday - Friday</strong></p>
-						<span class="container1 flaticon1">08:00am - 09:00pm</span>
-					</div>
-				</div>
-
-
-	    		<div class="margin" style="float: right;">
-					<fieldset style="padding: 2em; border-radius: 5px; border: none;">
-					
-					<form class="aform">
-						<h2 style="text-align: center;">Appointment</h2>
-						<div class=" container1"  >
-							<div >
-								<label>First Name: </label><br>
-								<input class="ibottom" style="    border-bottom: 1px solid rgb(250, 249, 249);
-" type="text" required name="firstname" value="" ><br><br>
-								<label>Last Name: </label><br>
-								<input class="ibottom" style="    border-bottom: 1px solid rgb(250, 249, 249);
-" type="text" required name="lasttname" value="" ><br><br>
-							</div>
-
-							<div style="margin-left: 10px;" >
-								<label>Tel: </label><br>
-								<input class="ibottom" style="    border-bottom: 1px solid rgb(250, 249, 249);
-" type="text" required name="tel" value="" ><br><br>
-								<label>Date</label><br>
-								<input class="ibottom" style="    border-bottom: 1px solid rgb(250, 249, 249);
-" type="date" required name="date"><br><br>
-							</div>
-
-						</div>
-						
-						<label>Message </label><br>
-						<textarea style="width: 610px;     border-bottom: 1px solid rgb(250, 249, 249);
-" class="ibottom" type="text" required name="message" value="" >Enter you message</textarea>
-
-					</form>
-					</fieldset>
-	            </div>
-			</div>	
-    </section>
+			  </div>
+			  <label>Message</label><br>
+			  <textarea name="message" rows="4" style="width: 100%; border: none; border-bottom: 1px solid #ccc; background: transparent; margin-top: 1em;">Enter your message</textarea>
+			</form>
+		  </div>
+		</div>
+	  </section>
+	  
+	  
 
     <footer class="footer">
           <div >
@@ -274,16 +201,14 @@
       </div>
     </footer>
 
-  <script>
-		document.getElementById('menu').addEventListener('click', () => {
-			document.getElementById('collapse').style.display = 'flex';
-		});
-		document.getElementById('menuleave').addEventListener('click', () => {
-			document.getElementById('menu').style.display = 'none';
-		});
-
-		
-	</script>
-
   </body>
+  <script>
+	const toggleBtn = document.getElementById("menu-toggle");
+	const navLinks = document.getElementById("nav-links");
+  
+	toggleBtn.addEventListener("click", () => {
+	  navLinks.classList.toggle("open");
+	});
+  </script>
+  
 </html>
